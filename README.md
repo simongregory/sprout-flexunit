@@ -1,25 +1,26 @@
 # Project Sprouts FlexUnit 4.x Gem _ALPHA_
 
-This RubyGem contains templates and libraries to add support for 
-[FlexUnit](http://flexunit.org) in [Project Sprouts](http://projectsprouts.org).
+This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and 
+libraries to add support for [FlexUnit](http://flexunit.org) in 
+[Project Sprouts](http://projectsprouts.org).
 
 ## Install
 
-  git clone [this repo]
-  cd sprout-flexunit
-  bundle install
-  gem build flexunit4.gemspec 
-  gem install flexunit4-0.0.1.pre.gem
+    git clone [this repo]
+    cd sprout-flexunit
+    bundle install
+    gem build flexunit4.gemspec 
+    gem install flexunit4
     
 #### Or
 
-  gem install flexunit --pre
+    gem install flexunit --pre
 
 ## Usage
 
 Make sure you have sprouts installed, then use:
 
-  sprout-flex TestProject
+    sprout-flex TestProject
   
 To generate you project template. The following edits will need to take place,
 
@@ -29,14 +30,16 @@ To generate you project template. The following edits will need to take place,
 
 This will mean that when you generate a class using:
 
-  sprout-class ClassToTest
+    sprout-class ClassToTest
   
 FlexUnit templates will be used to generate the associated test class.
 
 ## TODO
 
- * Use remote zip downloaded directly from the FlexUnit site.
-
+ * Project Template
+ * Runner Templates
+ * Rake examples
+ 
 ## MIT License
 
 Copyright (c) 2011 Simon Gregory
