@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description               = "FlexUnit 4 is meta-data driven allowing you to have extreme freedom and ease when creating tests."
   s.rubyforge_project         = "sprout-flexunit"
   s.required_rubygems_version = ">= 1.3.7"
-  s.require_path              = "sprout/lib"
+  s.require_path              = "lib"
   s.files                     = FileList["**/*"].exclude /docs|.DS_Store|generated|.svn|.git|airglobal.swc|airframework.swc/
 end
 
