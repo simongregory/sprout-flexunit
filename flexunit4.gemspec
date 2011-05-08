@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-require File.join(File.dirname(__FILE__), 'sprout', 'lib', 'flexunit4')
+require File.join(File.dirname(__FILE__), 'lib', 'flexunit4')
 require 'rake'
 
 Gem::Specification.new do |s|
