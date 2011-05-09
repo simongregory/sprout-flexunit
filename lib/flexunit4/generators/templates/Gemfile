@@ -1,0 +1,5 @@
+source "http://rubygems.org"
+
+gem "flashsdk", ">= 1.0.0.pre"
+gem "flexunit", ">= 0.0.3.pre"
+

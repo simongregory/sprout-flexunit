@@ -1,4 +1,3 @@
-
 module FlexUnit4
   class TestClassGenerator < FlashSDK::ClassGenerator
 

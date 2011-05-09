@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-require File.join(File.dirname(__FILE__), 'lib', 'flexunit4')
+require File.join(File.dirname(__FILE__), 'lib', 'flexunit')
 require 'rake'
 
 Gem::Specification.new do |s|
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage                  = "http://projectsprouts.org"
   s.summary                   = "FlexUnit is a unit testing framework for Flex and ActionScript 3.0 applications and libraries."
   s.description               = "FlexUnit 4 is meta-data driven allowing you to have extreme freedom and ease when creating tests."
+  s.executables               = ["fu-project", "fu-runner"]
   s.rubyforge_project         = "sprout-flexunit"
   s.required_rubygems_version = ">= 1.3.7"
   s.require_path              = "lib"

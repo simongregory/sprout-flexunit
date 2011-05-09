@@ -7,7 +7,7 @@ require 'rake'
 require 'rake/clean'
 require 'rake/testtask'
 
-require File.join(File.dirname(__FILE__), 'lib', 'flexunit4')
+require File.join(File.dirname(__FILE__), 'lib', 'flexunit')
 
 Rake::TestTask.new(:test) do |t|
   t.libs << "test/unit"

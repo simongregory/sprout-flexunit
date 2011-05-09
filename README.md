@@ -2,15 +2,16 @@
 
 This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and 
 libraries to add support for [FlexUnit](http://flexunit.org) in 
-[Project Sprouts](http://projectsprouts.org).
+[Project Sprouts](http://projectsprouts.org). In it's current state it's only
+useful function is to provide template support, see the TODO's below.
 
 ## Install
 
     git clone [this repo]
     cd sprout-flexunit
     bundle install
-    gem build flexunit4.gemspec 
-    gem install flexunit4
+    gem build flexunit.gemspec 
+    gem install flexunit
     
 #### Or
 
@@ -18,26 +19,32 @@ libraries to add support for [FlexUnit](http://flexunit.org) in
 
 ## Usage
 
-Make sure you have sprouts installed, then use:
+Generate a project with 
 
-    sprout-flex TestProject
-  
-To generate you project template. The following edits will need to take place,
+    fu-project TestProject
+    
+Or edit your Gemfile to include
 
- * Replace all `:asunit` references with `:flexunit4` in the Rake file.
- * Manually convert the TestRunner.mxml to use your choice of FlexUnit runners.
- * Switch the test task to use `amxmlc` in the Rake file.
+    gem "flexunit4", ">= 0.0.3.pre"
 
 This will mean that when you generate a class using:
 
-    sprout-class ClassToTest
+    sprout-class JamJar
   
-FlexUnit templates will be used to generate the associated test class.
+The associated FlexUnit test case will automatically be created.
+
+To build (when the swc's link as expected) the following Rake file edits may be 
+needed:
+
+ * Replace `:asunit` references with `:flexunit4`.
+ * Manually convert the TestRunner.mxml to use your choice of FlexUnit runners.
+ * Switch the test task to use `amxmlc` in the Rake file (if appropriate).
 
 ## TODO
-
- * Project Template
- * Runner Templates
+ 
+ * SWC library linkage
+ * Project Templates for AS3, Flex, & AIR
+ * Runner Templates for AS3, Flex, & AIR
  * Rake examples
  
 ## MIT License
