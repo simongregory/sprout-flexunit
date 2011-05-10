@@ -50,8 +50,8 @@ needed:
  
 ## Credit
 
-To Luke Bayes and Kristopher Joseph as similarity to the FlashSDK and Robotlegs
-srpout gems are not purely coincidental.
+To [Luke Bayes](http://github.com/lukebayes/) and [Kristopher Joseph](http://github.com/kristoferjoseph/) as similarity to the [FlashSDK](https://github.com/lukebayes/sprout-flashsdk) and [Robotlegs](http://github.com/kristoferjoseph/sprout-robotlegs)
+sprout gems are not purely coincidental.
  
 ## MIT License
 
