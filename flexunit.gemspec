@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
   s.homepage                  = "http://projectsprouts.org"
   s.summary                   = "FlexUnit is a unit testing framework for Flex and ActionScript 3.0 applications and libraries."
   s.description               = "FlexUnit 4 is meta-data driven allowing you to have extreme freedom and ease when creating tests."
-  s.executables               = ["fu-project", "fu-runner"]
-  s.rubyforge_project         = "sprout-flexunit"
+  s.executables               = ["fu-flex", "fu-as3", "fu-runner"]
+  s.post_install_message      = File.read 'POSTINSTALL.rdoc'
+  s.rubyforge_project         = "flexunit"
   s.required_rubygems_version = ">= 1.3.7"
   s.require_path              = "lib"
   s.files                     = FileList["**/*"].exclude /docs|.DS_Store|generated|.svn|.git|airglobal.swc|airframework.swc/

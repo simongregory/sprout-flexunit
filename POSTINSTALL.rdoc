@@ -1,0 +1,25 @@
+++++++++++++++++++++++++++++++++
+You have successfully installed Project Sprouts support for FlexUnit!
+
+Example usage:
+
+  # Generate a ActionScript 3 project named 'SomeProject'
+  fu-as3 SomeProject
+
+  # Generate a Flex project named 'SomeFlexProject'
+  fu-flex SomeFlexProject
+
+  # Generate a new class, test case and test suite:
+  sprout-class utils.MathUtil
+
+  # Compile and run the test harness:
+  rake test
+
+  # List available rake tasks:
+  rake -T
+
+  # List available generators:
+  sprout-
+  # or:
+  fu-
+  (followed by the TAB key)

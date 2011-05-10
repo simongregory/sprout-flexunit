@@ -7,10 +7,11 @@ module FlexUnit
   VERSION = '0.0.3.pre'
 end
 
-require 'flexunit4/generators/test_class_generator'
-require 'flexunit4/generators/suite_class_generator'
-require 'flexunit4/generators/runner_generator'
+require 'flexunit4/generators/flex_project_generator'
 require 'flexunit4/generators/project_generator'
+require 'flexunit4/generators/runner_generator'
+require 'flexunit4/generators/suite_class_generator'
+require 'flexunit4/generators/test_class_generator'
 
 Sprout::Specification.new do |s|
   s.name    = FlexUnit::NAME

@@ -3,7 +3,8 @@
 This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and 
 libraries to add support for [FlexUnit](http://flexunit.org) in 
 [Project Sprouts](http://projectsprouts.org). In it's current state it's only
-useful function is to provide template support, see the TODO's below.
+reliable function is to provide sprout-class generator support, see the TODO's
+below.
 
 ## Install
 
@@ -21,11 +22,11 @@ useful function is to provide template support, see the TODO's below.
 
 Generate a project with 
 
-    fu-project TestProject
+    fu-as3 TestProject
     
 Or edit your Gemfile to include
 
-    gem "flexunit4", ">= 0.0.3.pre"
+    gem "flexunit", ">= 0.0.3.pre"
 
 This will mean that when you generate a class using:
 
@@ -46,6 +47,11 @@ needed:
  * Project Templates for AS3, Flex, & AIR
  * Runner Templates for AS3, Flex, & AIR
  * Rake examples
+ 
+## Credit
+
+To Luke Bayes and Kristopher Joseph as similarity to the FlashSDK and Robotlegs
+srpout gems are not purely coincidental.
  
 ## MIT License
 
