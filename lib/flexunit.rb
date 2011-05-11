@@ -4,7 +4,7 @@ $:.unshift File.dirname(__FILE__)
 
 module FlexUnit
   NAME    = 'flexunit'
-  VERSION = '0.0.3.pre'
+  VERSION = '0.0.4.pre'
 end
 
 require 'flexunit4/generators/flex_project_generator'
