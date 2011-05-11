@@ -1,10 +1,8 @@
 require 'flashsdk'
 
-$:.unshift File.dirname(__FILE__)
-
 module FlexUnit
   NAME    = 'flexunit'
-  VERSION = '0.0.4.pre'
+  VERSION = '0.0.5.pre'
 end
 
 require 'flexunit4/generators/flex_project_generator'

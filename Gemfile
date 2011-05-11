@@ -1,4 +1,4 @@
-source :rubygems
+source "http://rubygems.org"
 
 gem 'flashsdk', '>= 1.0.2.pre'
 
