@@ -51,7 +51,7 @@ needed:
 ## Credit
 
 To [Luke Bayes](http://github.com/lukebayes/) and [Kristopher Joseph](http://github.com/kristoferjoseph/) as similarity to the [FlashSDK](https://github.com/lukebayes/sprout-flashsdk) and [Robotlegs](http://github.com/kristoferjoseph/sprout-robotlegs)
-sprout gems are not purely coincidental.
+sprout gems are _not_ purely coincidental.
  
 ## MIT License
 
