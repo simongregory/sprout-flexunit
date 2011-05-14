@@ -38,10 +38,10 @@ flashplayer :run => "<%= bin %>/<%= debug_swf_name %>"
 ##############################
 # Test
 
-library :flexunit
+library :flexunit_as3
 
 # Compile the test swf
-mxmlc "<%= bin %>/<%= test_swf_name %>" => :flexunit do |t|
+mxmlc "<%= bin %>/<%= test_swf_name %>" => :flexunit_as3 do |t|
   t.input = "<%= src %>/<%= test_runner_name %>.as"
   t.source_path << 'test'
   t.debug = true

@@ -13,8 +13,8 @@ public class <%= test_runner_name %> extends Sprite
     public function <%= test_runner_name %>()
     {
         core = new FlexUnitCore();
-        core.addListener( new TraceListener() );
-        core.run( AllTests );
+        core.addListener(new TraceListener());
+        core.run(AllTests);
     }
 
 }
