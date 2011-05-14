@@ -2,9 +2,10 @@ require 'flashsdk'
 
 module FlexUnit
   NAME    = 'flexunit'
-  VERSION = '0.0.5.pre'
+  VERSION = '0.0.6.pre'
 end
 
+require 'flexunit4/generators/air_project_generator'
 require 'flexunit4/generators/flex_project_generator'
 require 'flexunit4/generators/project_generator'
 require 'flexunit4/generators/runner_generator'

@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage                  = "http://flexunit.org"
   s.summary                   = "FlexUnit is a unit testing framework for Flex and ActionScript 3.0 applications and libraries."
   s.description               = "Project Sprouts support for the FlexUnit unit testing framework."
-  s.executables               = ["fu-flex", "fu-as3", "fu-runner"]
+  s.executables               = ["fu-flex", "fu-as3", "fu-air", "fu-runner"]
   s.post_install_message      = File.read 'POSTINSTALL.rdoc'
   s.rubyforge_project         = "flexunit"
   s.required_rubygems_version = ">= 1.3.7"
