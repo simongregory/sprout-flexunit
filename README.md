@@ -18,6 +18,8 @@ below.
 
     gem install flexunit --pre
 
+jruby users will have to install manually until issue #1 is resolved.
+
 ## Usage
 
 Generate a project with 
@@ -44,7 +46,6 @@ needed:
 ## TODO
  
  * SWC library linkage
- * Project Templates for AS3, Flex, & AIR
  * Runner Templates for AS3, Flex, & AIR
  * Rake examples
  
