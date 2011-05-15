@@ -9,6 +9,9 @@ Example usage:
   # Generate a Flex project named 'SomeFlexProject'
   fu-flex SomeFlexProject
 
+  # Generate a AIR project named 'SomeAirProject'
+  fu-air SomeAirProject
+
   # Generate a new class, test case and test suite:
   sprout-class utils.MathUtil
 
