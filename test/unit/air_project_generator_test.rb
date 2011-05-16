@@ -39,6 +39,10 @@ class AIRProjectGeneratorTest < Test::Unit::TestCase
       assert_file File.join(project, 'src', 'SomeProjectRunner.mxml') do |content|
         assert_matches /org.flexunit.runner.FlexUnitCore\b/, content
       end
+      assert_directory File.join(project, 'cert')
+      assert_file File.join(project, 'cert', 'password')
+      assert_file File.join(project, 'cert', 'dev-cert.p12')
+      
       assert_directory File.join(project, 'lib')
       assert_directory File.join(project, 'bin')
     end

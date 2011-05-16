@@ -18,7 +18,11 @@ module FlexUnit4
             directory images
             directory fonts
           end
-
+        end
+        
+        directory 'cert' do
+          file 'password'
+          file 'dev-cert.p12'
         end
 
         # Create empty directories:

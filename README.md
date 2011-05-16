@@ -28,7 +28,7 @@ Generate a project with
     
 Or edit your Gemfile to include
 
-    gem "flexunit", ">= 0.0.6.pre"
+    gem "flexunit", ">= 0.0.7.pre"
 
 This will mean that when you generate a class using:
 
@@ -46,6 +46,7 @@ needed:
 ## TODO
  
  * SWC library linkage
+ * A working AIR project Rakefile
  * Runner Templates for AS3, Flex, & AIR
  * Rake examples
  
