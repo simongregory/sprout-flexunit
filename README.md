@@ -28,7 +28,7 @@ Generate a project with
     
 Or edit your Gemfile to include
 
-    gem "flexunit", ">= 0.0.7.pre"
+    gem "flexunit", ">= 0.0.8.pre"
 
 This will mean that when you generate a class using:
 

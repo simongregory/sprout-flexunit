@@ -39,6 +39,9 @@ class AIRProjectGeneratorTest < Test::Unit::TestCase
       assert_file File.join(project, 'src', 'SomeProjectRunner.mxml') do |content|
         assert_matches /org.flexunit.runner.FlexUnitCore\b/, content
       end
+      assert_file File.join(project, 'src', 'SomeProjectRunner-app.xml') do |content|
+        assert_matches 'xmlns="http://ns.adobe.com/air/application/2.5"', content
+      end      
       assert_directory File.join(project, 'cert')
       assert_file File.join(project, 'cert', 'password')
       assert_file File.join(project, 'cert', 'dev-cert.p12')

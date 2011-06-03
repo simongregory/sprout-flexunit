@@ -8,8 +8,9 @@ module FlexUnit4
 
         directory src do
           template "#{input.camel_case}.mxml", 'AIRApplication.mxml'
+          template "#{input.camel_case}-app.xml", 'AIRApplication-app.xml'          
           template "#{test_runner_name}.mxml", 'AIRRunner.mxml'
-          template "#{input.camel_case}-app.xml", 'AIRApplication-app.xml'
+          template "#{test_runner_name}-app.xml", 'AIRRunner-app.xml'
 
           directory assets do
             directory css do

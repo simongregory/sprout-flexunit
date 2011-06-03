@@ -11,9 +11,11 @@ amxmlc "<%= bin %>/<%= debug_swf_name %>" do |t|
   t.debug = true
 end
 
+FileUtils.cp "<%= src %>/<%= class_name %>-app.xml", "<%= bin %>"
+
 # Run the debug swf using adl
 adl "<%= bin %>/<%= debug_swf_name %>" do |t|
-  app_desc = "<%= src %>/<%= class_name %>-app.xml"
+  t.app_desc = "<%= bin %>/<%= class_name %>-app.xml"
 end
 
 task :debug => "<%= bin %>/<%= debug_swf_name %>"
@@ -22,6 +24,7 @@ task :debug => "<%= bin %>/<%= debug_swf_name %>"
 # Test
 
 library :flexunit, :flexunit_flex
+library :flexunit, :flexunit_cilistener #Compile fails if we don't have this.
 library :flexunit, :flexunit_aircilistener
 
 # Compile the test swf
@@ -32,8 +35,15 @@ amxmlc "<%= bin %>/<%= test_swf_name %>" do |t|
   t.debug = true
 end
 
+FileUtils.cp "<%= src %>/<%= test_runner_name %>-app.xml", "<%= bin %>"
+
+# Run the test swf using adl
+adl "<%= bin %>/<%= test_swf_name %>" do |t|
+  t.app_desc = "<%= bin %>/<%= test_runner_name %>-app.xml"
+end
+
 desc "Compile and run the test swf"
-flashplayer :test => "<%= bin %>/<%= test_swf_name %>"
+task :test => "<%= bin %>/<%= test_swf_name %>"
 
 ##############################
 # Package

@@ -21,7 +21,7 @@ Example usage:
   # List available rake tasks:
   rake -T
 
-  # List available generators with one of:
+  # List available generators with either of:
   sprout-
   fu-
   (followed by the TAB key)

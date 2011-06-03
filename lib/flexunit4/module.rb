@@ -5,7 +5,7 @@ module FlexUnit
   # the intention is to have the Gem release match FlexUnit's Major Minor and 
   # Patch release numbers.
   #
-  VERSION = '0.0.7.pre'
+  VERSION = '0.0.8.pre'
   ZIP     = 'http://flexunit.org/releases/flexunit-4.1.0-8-4.1.0.16076.zip'
   MD5     = '11b355d269be39c03e24aa1143ef4c1c'
 end
