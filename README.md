@@ -2,9 +2,9 @@
 
 This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and 
 libraries to add support for [FlexUnit](http://flexunit.org) in 
-[Project Sprouts](http://projectsprouts.org). In it's current state it's only
-reliable function is to provide sprout-class generator support, see the TODO's
-below.
+[Project Sprouts](http://projectsprouts.org). Functionality includes the ability
+to create ActionScript 3, Flex, and AIR projects that are integrated with the 
+Sprouts workflow
 
 ## Install
 
@@ -28,7 +28,7 @@ Generate a project with
     
 Or edit your Gemfile to include
 
-    gem "flexunit", ">= 0.0.8.pre"
+    gem "flexunit", ">= 0.0.9.pre"
 
 This will mean that when you generate a class using:
 
@@ -36,20 +36,11 @@ This will mean that when you generate a class using:
   
 The associated FlexUnit test case will automatically be created.
 
-To build (when the swc's link as expected) the following Rake file edits may be 
-needed:
+To build the following Rake file edits may be needed:
 
- * Replace `:asunit` references with `:flexunit4`.
  * Manually convert the TestRunner.mxml to use your choice of FlexUnit runners.
  * Switch the test task to use `amxmlc` in the Rake file (if appropriate).
 
-## TODO
- 
- * SWC library linkage
- * A working AIR project Rakefile
- * Runner Templates for AS3, Flex, & AIR
- * Rake examples
- 
 ## Credit
 
 To [Luke Bayes](http://github.com/lukebayes/) and [Kristopher Joseph](http://github.com/kristoferjoseph/) as similarity to the [FlashSDK](https://github.com/lukebayes/sprout-flashsdk) and [Robotlegs](http://github.com/kristoferjoseph/sprout-robotlegs)
