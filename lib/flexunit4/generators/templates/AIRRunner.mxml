@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:WindowedApplication
-    xmlns:mx="http://www.adobe.com/2006/mxml"
-    creationComplete="creationCompleteHandler()"
-    x="0" y="0">
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+                       xmlns:s="library://ns.adobe.com/flex/spark"
+                       xmlns:fu="http://www.adobe.com/2009/flexUnitUIRunner"
+                       creationComplete="creationCompleteHandler()">
 
-    <mx:Script>
-        <![CDATA[
-            import org.flexunit.internals.TraceListener;
-            import org.flexunit.listeners.AirCIListener;
-            import org.flexunit.runner.FlexUnitCore;
+    <fx:Script>
+       <![CDATA[
+           import org.flexunit.internals.TraceListener;
+           import org.flexunit.listeners.AirCIListener;
+           import org.flexunit.listeners.UIListener;
+           import org.flexunit.runner.FlexUnitCore;
 
-            private var _core:FlexUnitCore;
+           private var _core:FlexUnitCore;
 
-            protected function creationCompleteHandler():void
-            {
-                _core = new FlexUnitCore();
+           protected function creationCompleteHandler():void
+           {
+               _core = new FlexUnitCore();
 
-                _core.addListener(new TraceListener());
-                _core.addListener(new AirCIListener());
-                _core.run(AllTests);
-            }
-        ]]>
-    </mx:Script>
+               _core.addListener(new TraceListener());
+               _core.addListener(new AirCIListener());
+               _core.addListener(new UIListener(ui));
+               _core.run(AllTests);
+           }
+       ]]>
+    </fx:Script>
 
-</mx:WindowedApplication>
+    <fu:TestRunnerBase id="ui" width="100%" height="100%"/>
+
+</s:WindowedApplication>

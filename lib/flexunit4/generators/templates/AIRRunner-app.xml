@@ -1,64 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <application 
-	xmlns="http://ns.adobe.com/air/application/2.5"
-	minimumPatchLevel="0">
-    <!-- AIR Application Descriptor File. See http://www.adobe.com/go/learn_air_1.0_application_descriptor_en. -->
-	<id><%= package_name %>.<%= test_runner_name %></id>
-	<name>
-		<text xml:lang="en"><%= test_runner_name %></text>
-	</name>
-    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
-             Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
-             An updated version of application must have a versionNumber value higher than the previous version. Required for namespace >= 2.5 . -->
-    <versionNumber>0.0.1</versionNumber>
+    xmlns="http://ns.adobe.com/air/application/2.5"
+    minimumPatchLevel="0">
 
-    <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
+    <id><%= package_name %>.<%= test_runner_name %></id>
+    <name>
+        <text xml:lang="en"><%= test_runner_name %></text>
+    </name>
+    <versionNumber>0.0.1</versionNumber>
     <versionLabel>0.0.1</versionLabel>
-	<filename><%= project_name %></filename>
-	<description>
-		<text xml:lang="en">This is a sample Adobe AIR application built with Project Sprouts.</text>
-	</description>
-	<copyright>Copyright 2011</copyright>
-	<initialWindow>
-		<content><%= test_swf_name %></content>
-		<!-- <title>Example Application</title> -->
-		<systemChrome>standard</systemChrome>
-		<transparent>false</transparent>
-		<visible>false</visible>
-		<minimizable>true</minimizable>
-		<maximizable>true</maximizable>
-		<resizable>true</resizable>
-		<width>500</width>
-		<height>500</height>
-		<x>150</x>
-		<y>150</y>
-		<minSize>300 300</minSize>
-		<maxSize>800 800</maxSize>
-	</initialWindow>
-    <!-- 
-    <installFolder>Example Company/Example Application</installFolder>
-    <programMenuFolder>Example Company/Example Application</programMenuFolder>
-    <icon>
-        <image16x16>icons/AIRApp_16.png</image16x16>
-        <image32x32>icons/AIRApp_32.png</image32x32>
-        <image48x48>icons/AIRApp_48.png</image48x48>
-        <image128x128>icons/AIRApp_128.png</image128x128>
-    </icon>
-    <customUpdateUI>false</customUpdateUI>
-    <allowBrowserInvocation>false</allowBrowserInvocation>
-    <fileTypes>
-        <fileType>
-            <name>com.example</name>
-            <extension>xmpl</extension>
-            <description>Example file</description>
-            <contentType>example/x-data-type</contentType>
-            <icon>
-                <image16x16>icons/AIRApp_16.png</image16x16>
-                <image32x32>icons/AIRApp_32.png</image32x32>
-                <image48x48>icons/AIRApp_48.png</image48x48>
-                <image128x128>icons/AIRApp_128.png</image128x128>
-            </icon>
-        </fileType>
-    </fileTypes>
-    -->
+    <filename><%= project_name %></filename>
+    <description>
+        <text xml:lang="en">This is a sample Adobe AIR application built with Project Sprouts.</text>
+    </description>
+    <copyright>Copyright 2011</copyright>
+    <initialWindow>
+        <content><%= test_swf_name %></content>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <visible>false</visible>
+        <minimizable>true</minimizable>
+        <maximizable>true</maximizable>
+        <resizable>true</resizable>
+        <width>900</width>
+        <height>650</height>
+        <x>50</x>
+        <y>50</y>
+        <minSize>500 300</minSize>
+        <maxSize>1500 1000</maxSize>
+    </initialWindow>
 </application>

@@ -34,7 +34,7 @@ class AIRProjectGeneratorTest < Test::Unit::TestCase
         assert_matches '<s:Label text="SomeProject"', content
       end
       assert_file File.join(project, 'src', 'SomeProject-app.xml') do |content|
-        assert_matches '<application xmlns="http://ns.adobe.com/air/application/1.5.3">', content
+        assert_matches 'xmlns="http://ns.adobe.com/air/application/2.5"', content
       end
       assert_file File.join(project, 'src', 'SomeProjectRunner.mxml') do |content|
         assert_matches /org.flexunit.runner.FlexUnitCore\b/, content

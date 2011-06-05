@@ -24,6 +24,7 @@ task :debug => "<%= bin %>/<%= debug_swf_name %>"
 # Test
 
 library :flexunit, :flexunit_flex
+library :flexunit, :flexunit_uilistener
 library :flexunit, :flexunit_cilistener #Compile fails if we don't have this.
 library :flexunit, :flexunit_aircilistener
 
@@ -47,8 +48,6 @@ task :test => "<%= bin %>/<%= test_swf_name %>"
 
 ##############################
 # Package
-
-desc "Create AIR installer"
 
 adt 'bin/<%= class_name %>.air' => 'bin/<%= class_name %>.swf' do |t|
   t.package        = true
