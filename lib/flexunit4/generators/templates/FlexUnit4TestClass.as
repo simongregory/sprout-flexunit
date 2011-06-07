@@ -1,9 +1,11 @@
 package <%= package_name %>
+
 {
 
 import org.flexunit.Assert;
 
 public class <%= test_class_name %>
+
 {
     private var <%= instance_name %>:<%= class_name %>;
 
@@ -27,4 +29,3 @@ public class <%= test_class_name %>
 }
 
 }
-
