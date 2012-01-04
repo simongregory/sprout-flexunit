@@ -7,6 +7,11 @@ require 'flexunit4/generators/runner_generator'
 require 'flexunit4/generators/suite_class_generator'
 require 'flexunit4/generators/test_class_generator'
 require 'flexunit4/module'
+require 'flexunit4/report/case'
+require 'flexunit4/report/report'
+require 'flexunit4/report/run_monitor'
+require 'flexunit4/report/suite'
+require 'flexunit4/report/task'
 
 Sprout::Specification.new do |s|
   s.name    = FlexUnit::NAME
