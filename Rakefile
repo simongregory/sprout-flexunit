@@ -21,6 +21,9 @@ end
 
 CLEAN.add '*.gem'
 
+desc "Default"
+task :default => [:test]
+
 #############################################################################
 #
 # Packaging tasks

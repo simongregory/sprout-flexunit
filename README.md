@@ -1,5 +1,7 @@
 # Project Sprouts FlexUnit 4.x Gem _ALPHA_
 
+[![Build Status](https://secure.travis-ci.org/simongregory/sprout-flexunit.png)](http://travis-ci.org/simongregory/sprout-flexunit)
+
 This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and
 libraries to add support for [FlexUnit](http://flexunit.org) in
 [Project Sprouts](http://projectsprouts.org). Functionality includes the ability
