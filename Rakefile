@@ -31,17 +31,17 @@ task :release do
   puts ""
   print "Are you sure you want to relase FlexUnit #{FlexUnit::VERSION}? [y/N] "
   exit unless STDIN.gets.index(/y/i) == 0
-  
+
   unless `git branch` =~ /^\* master$/
     puts "You must be on the master branch to release!"
     exit!
   end
-  
+
   # Build gem and upload
   sh "gem build flexunit.gemspec"
   sh "gem push flexunit-#{FlexUnit::VERSION}.gem"
   sh "rm flexunit-#{FlexUnit::VERSION}.gem"
-  
+
   # Commit
   sh "git commit --allow-empty -a -m 'v#{FlexUnit::VERSION}'"
   sh "git tag v#{FlexUnit::VERSION}"

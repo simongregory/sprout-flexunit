@@ -1,9 +1,9 @@
 # Project Sprouts FlexUnit 4.x Gem _ALPHA_
 
-This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and 
-libraries to add support for [FlexUnit](http://flexunit.org) in 
+This [RubyGem](http://docs.rubygems.org/read/book/7) contains templates and
+libraries to add support for [FlexUnit](http://flexunit.org) in
 [Project Sprouts](http://projectsprouts.org). Functionality includes the ability
-to create ActionScript 3, Flex, and AIR projects that are integrated with the 
+to create ActionScript 3, Flex, and AIR projects that are integrated with the
 Sprouts workflow
 
 ## Install
@@ -11,9 +11,9 @@ Sprouts workflow
     git clone [this repo]
     cd sprout-flexunit
     bundle install
-    gem build flexunit.gemspec 
+    gem build flexunit.gemspec
     gem install flexunit
-    
+
 #### Or
 
     gem install flexunit --pre
@@ -22,10 +22,10 @@ jruby users will have to install manually until issue #1 is resolved.
 
 ## Usage
 
-Generate a project with 
+Generate a project with
 
     fu-as3 TestProject
-    
+
 Or edit your Gemfile to include
 
     gem "flexunit", ">= 0.0.9.pre"
@@ -33,7 +33,7 @@ Or edit your Gemfile to include
 This will mean that when you generate a class using:
 
     sprout-class JamJar
-  
+
 The associated FlexUnit test case will automatically be created.
 
 To build the following Rake file edits may be needed:
